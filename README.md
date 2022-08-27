@@ -1,6 +1,6 @@
 # Task-organizer
 
-[Live URL](https://task-organizer-group-2.github.io/Task-organizer/)
+
 
 ### Description
 
@@ -14,3 +14,5 @@ HTML, CSS, Bootstrap, Javascript
 
 Laith Samamah, Manar Olimat, Jafar Thawahrah,
 Emad Hashash, Dua'a Nawwas
+
+[Live URL](https://manar-olimat.github.io/taskat/)
