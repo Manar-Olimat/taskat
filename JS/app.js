@@ -36,14 +36,24 @@ modeToggle.addEventListener("click", () => {
 
 // popoup form
 //toggle elements
-const btn = document.querySelectorAll(".showMe");
+// const btn = document.querySelectorAll(".showMe");
+const signInBtn = document.getElementById("signin-btn");
+const joinUsBtn = document.getElementById("joinus-btn");
 const exit = document.getElementById("exit");
 exit.addEventListener("click", undoToggle);
 
-btn.forEach((ele) => {
-	ele.addEventListener("click", toggle);
+// btn.forEach((ele) => {
+// 	ele.addEventListener("click", toggle);
+// });
+signInBtn.addEventListener("click", () => {
+	toggle();
+	const check = document.getElementById("check");
+	check.removeAttribute("checked");
 });
-
+joinUsBtn.addEventListener("click", () => {
+	toggle();
+	const check = document.getElementById("check");
+	check.setAttribute("checked", "");
 function toggle() {
 	const blur = document.getElementById("blur");
 	blur.classList.toggle("active");
@@ -62,7 +72,7 @@ function undoToggle() {
 	popUp.classList.toggle("disabled");
 	popUp.classList.remove("active");
 }
-
+});
 /// crearte user object
 
 function User(fName, lName, email, password) {
