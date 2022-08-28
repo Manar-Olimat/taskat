@@ -53,7 +53,7 @@ signInBtn.addEventListener("click", () => {
 joinUsBtn.addEventListener("click", () => {
 	toggle();
 	const check = document.getElementById("check");
-	check.setAttribute("checked", "");
+	check.setAttribute("checked", "");});
 function toggle() {
 	const blur = document.getElementById("blur");
 	blur.classList.toggle("active");
@@ -64,6 +64,8 @@ function toggle() {
 	console.log("btn");
 }
 
+
+
 function undoToggle() {
 	const blur = document.getElementById("blur");
 	blur.classList.toggle("disabled");
@@ -72,7 +74,6 @@ function undoToggle() {
 	popUp.classList.toggle("disabled");
 	popUp.classList.remove("active");
 }
-});
 /// crearte user object
 
 function User(fName, lName, email, password) {
